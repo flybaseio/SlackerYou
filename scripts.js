@@ -1,4 +1,4 @@
-	// Create a reference to firebase
+	// Create a reference to flybase
 	var messagesRef = new Flybase("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlrZXkiOiJkMmZkYzY3Ni1mN2ExLTQ2NDAtOGQzNi0zNzZjZWMyMGViNzUiLCJpYXQiOjE0Njc4OTYzMjEsImNyZWF0ZWQiOiIyMDE2LTA3LTA3IDA1OjU4OjQxIiwiZXhwaXJlcyI6IjIwMTYtMDgtMDYgMDU6NTg6NDEifQ.ARPzz_7RqpmPkPzyVunksvSqMDK8uQ1mS5X12I18eQg", "slacker", "chat");
 
 	// C.R.E.A.M -	cache your elements
@@ -33,7 +33,7 @@
 			text : messageField.val()
 		}
 
-		// Save Data to firebase
+		// Save Data to flybase
 		messagesRef.push(message);
 
 		// clear message field
@@ -43,7 +43,7 @@
 
 	// Add a callback that is triggered for each chat message
 	// this is kind of like an Ajax request, but they come in via websockets
-	// 10 of them will load on page load, and any future messages will as well
+	// 25 of them will load on page load, and any future messages will as well
 	messagesRef.limit(25).orderBy({"_id":-1}).on('value', function (snapshot) {
 		if( snapshot.count() ){
 			snapshot.forEach( function(row){

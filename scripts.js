@@ -1,5 +1,5 @@
 	// Create a reference to flybase
-	var messagesRef = new Flybase("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlrZXkiOiJkMmZkYzY3Ni1mN2ExLTQ2NDAtOGQzNi0zNzZjZWMyMGViNzUiLCJpYXQiOjE0Njc4OTYzMjEsImNyZWF0ZWQiOiIyMDE2LTA3LTA3IDA1OjU4OjQxIiwiZXhwaXJlcyI6IjIwMTYtMDgtMDYgMDU6NTg6NDEifQ.ARPzz_7RqpmPkPzyVunksvSqMDK8uQ1mS5X12I18eQg", "slacker", "chat");
+	var messagesRef = new Flybase("token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlrZXkiOiJkMmZkYzY3Ni1mN2ExLTQ2NDAtOGQzNi0zNzZjZWMyMGViNzUiLCJpYXQiOjE0Njc4OTYzMjEsImNyZWF0ZWQiOiIyMDE2LTA3LTA3IDA1OjU4OjQxIiwiZXhwaXJlcyI6IjIwMTYtMDgtMDYgMDU6NTg6NDEifQ.ARPzz_7RqpmPkPzyVunksvSqMDK8uQ1mS5X12I18eQg", "slacker", "chat");
 
 	// C.R.E.A.M -	cache your elements
 	var messageField = $('#messageInput');

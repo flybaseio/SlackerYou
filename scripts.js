@@ -33,7 +33,7 @@
 			text : messageField.val()
 		}
 
-		// Save Data to firebase
+		// Save Data to flybase
 		messagesRef.push(message);
 
 		// clear message field
